@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>NavBar Practice</title>
+
+    <!-- Bootstrap -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- my custom stylesheet -->
+<link rel="stylesheet" href="/NavBarCustomCSS.css">
+
+<!-- Optional theme -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+
+
+<!-- Font Awesome Script -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1 style="text-align:center; color:gray">These are two NavBar mockups ---- Yay!<br><br><br></h1>
+    
+    <!--Nav Bar Mockup 1-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid" style="background-color:#A9CAD9">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="background-color:#A9CAD9"><i class='fa fa-home' style="color:white"></i></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a style="background-color:#A9CAD9; color:white" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Recent Activity</a></li>
+            <li><a href="#">Member Forum</a></li>
+            <li><a href="#">Member List</a></li>
+            <li><a href="#">Member Groups</a></li>
+          </ul>
+        </li>
+        <li><a style="background-color:#A9CAD9; color:white" href="#">Pet Help</a></li>
+        <li><a style="background-color:#A9CAD9; color:white" href="#">Pets for Sale</a></li>
+        <li><a style="background-color:#A9CAD9; color:white" href="#">Pet Services</a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div>
+
+    <!--Nav Bar Mockup 2-->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab" style="background-color:#A9CAD9"><i class='fa fa-home' style="color:white"></i></a></li>
+    <li role="presentation" class="dropdown">
+    	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="background-color:#A9CAD9; color:white">Community</a>
+        <ul class="dropdown-menu">
+    		<li><a href="#recent" aria-controls="recent" role="tab" data-toggle="tab">Recent Activity</a></li>
+    		<li><a href="#forum" aria-controls="forum" role="tab" data-toggle="tab">Member Forum</a></li>
+    		<li><a href="#list" aria-controls="list" role="tab" data-toggle="tab">Member List</a></li>
+    		<li><a href="#groups" aria-controls="groups" role="tab" data-toggle="tab">Member Groups</a></li>
+    	</ul>
+    <li role="presentation"><a href="#help" aria-controls="help" role="tab" data-toggle="tab" style="background-color:#A9CAD9; color:white">Pet Help</a></li>
+    <li role="presentation"><a href="#sale" aria-controls="Pets for Sale" role="tab" data-toggle="tab" style="background-color:#A9CAD9; color:white">Pets for Sale</a></li>
+    <li role="presentation"><a href="#services" aria-controls="Pet Services" role="tab" data-toggle="tab" style="background-color:#A9CAD9; color:white">Pet Services</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="home"><p style="text-align:center; font-size:200%"><i class="fa fa-home"></i> <br> icon from Font Awesome</p></div>
+    	<div role="tabpanel" class="tab-pane fade" id="recent"><p style="text-align:center; font-size:200%">Pet Owners of the Interwebs: <br> What up! </p></div>
+    	<div role="tabpanel" class="tab-pane fade" id="forum"><p style="text-align:center; font-size:200%">The Forum</p></div>
+    	<div role="tabpanel" class="tab-pane fade" id="list"><p style="text-align:center; font-size:200%">Here's a List of Members:<br>Bobby<br>Suzy<br>Jane</p></div>
+    	<div role="tabpanel" class="tab-pane fade" id="groups"><p style="text-align:center; font-size:200%">You can join Member Groups wewt!</p></div>
+    	
+    <div role="tabpanel" class="tab-pane fade" id="help"><p style="text-align:center; font-size:200%">Do you need help with your pet? <br> Call us today!</p></div>
+    <div role="tabpanel" class="tab-pane fade" id="sale"><p style="text-align:center; font-size:200%">Call 1-800-GET-PETS now!</p></div>
+    <div role="tabpanel" class="tab-pane fade" id="services"><p style="text-align:center; font-size:200%">Find the right services for your pet<br>Call now!</p></div>
+  </div>
+
+  </body>
+</html>
